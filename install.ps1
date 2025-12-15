@@ -2,10 +2,10 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $palette = [ordered]@{
-    "latte" = @{
-        "base"   = "#eff1f5"
-        "mantle" = "#e6e9ef"
-        "crust"  = "#dce0e8"
+    "CoffeeChristmas" = @{
+        "base"   = "#443135"
+        "mantle" = "#553F41"
+        "crust"  = "#553F41"
     }
     "frappe" = @{
         "base"   = "#303446"
@@ -17,10 +17,10 @@ $palette = [ordered]@{
         "mantle" = "#1e2030"
         "crust"  = "#181926"
     }
-    "mocha" = @{
-        "base"   = "#1e1e2e"
-        "mantle" = "#181825"
-        "crust"  = "#11111b"
+    "TokyoNightDark" = @{
+        "base"   = "#24283b"
+        "mantle" = "#1a1b26"
+        "crust"  = "#1a1b26"
     }
 }
 
@@ -101,4 +101,4 @@ foreach ($path in $locatedPaths) {
     Update-Config -path $path -colors $colors
 }
 
-Write-Host "Catppuccin for Files has been installed! 🎉" -ForegroundColor Green
+Write-Host "Theme for Files has been installed! 🎉" -ForegroundColor Green
